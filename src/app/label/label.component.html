@@ -1,10 +1,25 @@
 <p>
   {{festesLabel}}
 </p>
+<div>
+  <input type="checkbox" [(ngModel)]='checkbox1'>
+  Eine einfache Checkbox.
+</div>
+<div>
+  <input type="checkbox" [(ngModel)]='checkbox2' >
+  Wenn die Checkbox angeklickt wird, erscheint neuer Text.
+</div>
+<div *ngIf="checkbox2">
+  Neuer Text.
+</div>
+
+
 <div class="label">
-  <h2>Labels</h2>
-  <p> {{label.name}}
-    <span>Nummer: </span>{{label.id}}
-  </p>
+  <h2>Labelliste</h2>
+  <ul class="labelList">
+    <li *ngFor="let label of labelList">
+      {{label.name}} <span>Nummer {{label.id}}</span>
+    </li>
+  </ul>
 </div>
 

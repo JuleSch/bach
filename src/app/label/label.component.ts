@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Label } from '../label';
+import { labelList } from '../labelList';
 
 @Component({
   selector: 'app-label',
@@ -10,15 +10,12 @@ export class LabelComponent implements OnInit {
 
   festesLabel = 'Ein fester String.';
 
-  label: Label = {
-    id: 1,
-    name: 'Label'
-  };
-
+  labelList = labelList;
 
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }
