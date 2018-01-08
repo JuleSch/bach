@@ -1,0 +1,10 @@
+p {
+  width: max-content;
+  height: 20px;
+  padding-top: 2px;
+  border: solid;
+}
+
+.label{
+  display: block;
+}
