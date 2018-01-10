@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import LabelComponent from './label-component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Thesis';
+  componentData = null;
+
+  createLabelComponent(){
+    this.componentData = {
+      component: LabelComponent,
+      inputs: {
+        showNum: 9
+      }
+    };
+  }
 }
+
+
