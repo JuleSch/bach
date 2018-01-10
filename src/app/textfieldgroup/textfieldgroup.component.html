@@ -1,0 +1,16 @@
+<h2>Textfeldgruppe</h2>
+<h3><i>Just a FormControl</i></h3>
+<label class="center-block">formControl:
+  <input class="form-control" [formControl]="name">
+</label>
+<p>Form value from FormControl: {{ name.value | json }}</p>
+<form [formGroup]="textfieldForm" novalidate>
+  <!-- novalidate verhindert, dass der Browser native HTML-Validierungen durchführt.-->
+  <div class="form-group">
+    <label class="center-block">formControlGroup:
+      <input class="form-control" formControlName="name">
+    </label>
+  </div>
+</form>
+
+<p>Form value from FormControlGroup: {{ textfieldForm.value | json }}</p>  <!-- Piping rendert zu json-Format-->

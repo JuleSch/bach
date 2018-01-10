@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'Thesis';
   componentData = null;
 
-  createLabelComponent(){
+ createLabelComponent(){
     this.componentData = {
       component: LabelComponent,
       inputs: {
