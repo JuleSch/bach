@@ -17,5 +17,14 @@ export const data: Data[] = [
     addresses: [
       {street: 'Teststr.',  city: 'Anywhere', state: 'CA'},
     ]
+  },
+  {
+    id: 2,
+    name: 'Testitest Nr. 2',
+    addresses: [
+      {street: 'Teststr.',  city: 'Anywhere', state: 'CA'},
+    ]
   }
 ];
+
+export const states = ['state1', 'state2', 'state3', 'state4'];

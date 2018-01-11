@@ -7,7 +7,7 @@ import { TextfieldsComponent } from './textfields/textfields.component';
 import { LabelComponent } from './label/label.component';
 import NewLabelComponent from './label-component';
 import DynamicComponent from './dynamic.component';
-import { TextfieldgroupComponent } from './textfieldgroup/textfieldgroup.component';
+import { TextfieldgroupComponent} from './textfieldgroup/textfieldgroup.component';
 
 
 @NgModule({
